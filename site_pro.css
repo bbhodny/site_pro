@@ -1,0 +1,388 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --color1:#d89584;
+    --color2:#f4f4f4;
+}
+
+body{
+    margin:0;
+    font-family: Arial;
+    line-height: 1.3;
+}
+
+iframe{
+    width: 100%;
+    border: none;
+    height: 350px;
+    
+}
+
+div.cover{
+    background:url(cover_overlay.png) no-repeat center/100% 100%, url(cover.jpg) no-repeat center/cover;
+    height: 450px;
+    position: relative;
+}
+
+img.cover-profile{
+                    height: 126px;
+                    position: relative;
+                    left: 50%;
+                    margin-left: -63px;
+                    margin-top: 50px;
+                   
+}
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 42px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+div.cover p{
+    color: lightgray;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 16px;
+}
+div.cover-contact{
+    /*background-color: #ff000080;*/
+    position:absolute;
+    top: 10px;
+    left: 13px;
+    border-left: 4px solid #d89584;
+    padding-left: 15px;
+
+}
+
+div.cover-contact p{
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+div.cover-contact p:first-child{
+    margin-bottom: 18px;
+
+
+}
+
+
+div.cover-contact a{
+    color:white;
+    font-size: 15px;
+}
+
+a.boutton-contact{
+                    color: var(--color1);
+                    border: 3px solid var(--color1);
+                    padding: 8px 20px;
+                    text-decoration: none;
+                    background-color: #00000060;
+                    display: inline-block;
+                    margin-top: 15px;
+
+}
+
+.section{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: auto;
+   
+}
+
+a.boutton-contact:hover{
+                    color: white;
+                    border: 5px solid white;
+                    padding: 10px 30px;
+}
+
+a.contact_haut:hover{
+                    color:var(--color1);
+                    
+                    
+}
+
+
+
+div.section_grise1{
+                   background: url(triangle2white.svg) no-repeat center bottom/100%;
+                   background-color: var(--color2);
+                   padding-bottom: 120px;
+}
+
+div.section_grise2{
+                   background: url(triangle1white.svg) no-repeat center top/100%;
+                   background-color: var(--color2);
+                   padding-top: 120px;
+}
+
+
+h2{
+    text-align: center;
+    font-size: 34px;
+    margin-top: 0px;
+}
+
+div.separateur{
+                background-color: #979797;
+                height: 5px;
+                width: 150px;
+                position: relative;
+                left: 50%;
+                margin-left: -75px;
+
+
+
+}
+div.section_grise1 p{
+    font-size: 22px;
+    color: #656565;
+    max-width: 750px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+
+}
+
+img.col_contenu{
+    width: 40%;
+}
+
+div.col_contenu{
+    width: 60%;
+    padding-left: 10px;
+}
+
+.float_right{
+    float: right;
+}
+
+
+div.texte_ligne_verticale {
+    border-left: 5px solid var(--color1);
+    padding-left: 11px;
+    height: 50px;
+    display: inline-block;
+    text-align: justify;
+
+}
+
+div.texte_ligne_verticale p{
+                                        margin-top: 0;
+
+}
+
+div.barre_verticale{
+                    height: 50px;
+                    width: 4px;
+                    background-color: var(--color1);
+                    margin-right: 11px;
+
+
+
+}
+
+.col_portfolio{
+    width: 48%;
+}
+
+div.frame{
+    margin: 30px 50px;
+    padding: 20px 30px;
+    background-color: white;
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
+
+
+}
+
+p.frame_title{
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+div.frame img{
+width: 150px;
+}
+
+/*    portfolio*/
+
+.display_mobile{
+    display: none;
+
+
+}
+
+div.portfolio_header{
+    min-height: 90px;
+    background: url(header.jpg) no-repeat center/cover;
+    position: relative;
+
+
+}
+
+.portfolio_header_title{
+                        font-size: 26px;
+                        font-weight: bold;
+                        color: white;
+                        display:inset-block;
+                        margin-top: 3px;
+                        padding: 8px;
+}
+
+h1.portfolio{
+    font-size: 46px;
+    color: black;
+    line-height: 1;
+    padding-top: 10px;
+}
+
+h2.portfolio{
+    font-size: 30px;
+    color: black;
+    font-weight: normal;
+    margin-bottom: 0px;
+}
+
+a.portfolio_back{
+    color: var(--color1);
+
+}
+
+img.portfolio{
+    width: 70%;
+    max-width: 550px;
+    
+}
+
+/*responsive*/
+@media only screen and (max-width:767px) {
+
+    img.cover-profile{
+        height: 90px;
+        margin-left: -45px;
+        margin-top: 70px;
+       
+}
+
+h1 {
+font-size: 30px;
+margin-top: 5px;
+margin-bottom: 0;
+}
+
+div.cover p{
+margin-top: 5px;
+font-size: 15px;
+}
+
+div.cover-contact p:first-child{
+    margin-bottom: 15px;
+
+
+}
+
+div.cover-contact a{
+    
+    font-size: 14x;
+}
+
+.section{
+    padding-left: 18px;
+    padding-right: 18px;  
+}
+
+div.section_grise1{
+    padding-bottom: 70px;
+}
+
+div.section_grise1 p{
+    font-size: 17px;
+}
+
+img.col_contenu{
+    width: 100%;
+}
+
+div.col_contenu{
+    width: 100%;
+    padding-left: 0;
+    
+}
+div.texte_ligne_verticale {
+    font-size: 17px;
+}
+
+.col_portfolio{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+div.frame{
+    margin: 0px 0px;
+    padding: 0px 0px;
+    box-shadow: none;
+    
+
+}
+
+div.frame p{
+            font-size: 20px;
+}
+
+div.frame img{
+    width: 100px;
+    }
+
+    /*porfolio*/
+    .portfolio_header_title{
+                            font-size: 18px;
+                            margin-left: 3px;
+                            padding: 3px;
+}
+
+    a.boutton-contact{
+                    font-size: 16px;
+                    padding: 4px 1px;
+                    margin-top: 8px;
+}
+
+a.contact_btn_portfolio{
+                        position:absolute;
+                        right: 10px;
+                        top:10px;
+                    }
+                    
+h1.portfolio{
+                        font-size: 40px;
+                       
+                    }
+                    
+h2.portfolio{
+                        font-size: 24px;
+                       
+                    }
+
+img.portfolio{
+                        width: 100%; 
+                    }
+.display_mobile{
+    display: block;
+
+
+}
+
+
+
+
+}
